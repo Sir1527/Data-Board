@@ -27,22 +27,62 @@
           </div>
           <div class="slot-content">
             <div class="manager-item">
-              <div class="bg-image-common">
-<!--                <img src="http://10.51.36.212:8888/je/document/preview?fileKey=wjVB6BA6QFQSKUYhWBj"-->
-<!--                     style="width: 48px;height: 48px;-->
-<!--                     border: 1px solid #bbbbbb;-->
-<!--                     box-shadow: 0 0 3px 3px #bbb;-->
-<!--                     border-radius: 50%;-->
-<!--                     vertical-align: middle;-->
-<!--                     background-position: center;" />-->
-<!--                <el-avatar src="http://10.51.36.212:8888/je/document/preview?fileKey=wjVB6BA6QFQSKUYhWBj" />-->
+              <div class="vertical-middle manager-info">
+                <div class="img">
+                  <el-avatar :size="48" src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png" />
+                </div>
+                <div style="margin-left: 15px;display: inline-block;vertical-align: middle;">
+                  <div class="name">冯新贤</div>
+                  <div class="flag">IE</div>
+                </div>
+              </div>
+              <div class="vertical-middle ver-line1"></div>
+              <div class="vertical-middle manager-desc">负责DVB产品、音箱项目产品工艺文件制作和产品定额。</div>
+            </div>
+            <div class="manager-item">
+              <div class="vertical-middle manager-info">
+                <div class="img">
+                  <el-avatar :size="48" src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png" />
+                </div>
+                <div style="margin-left: 15px;display: inline-block;vertical-align: middle;">
+                  <div class="name">李海燕</div>
+                  <div class="flag">线长</div>
+                </div>
+              </div>
+              <div class="vertical-middle ver-line1"></div>
+              <div class="vertical-middle manager-desc">总装六班、九班线长，负责日常生产和人员管理。</div>
+            </div>
+            <div class="manager-item">
+              <div class="vertical-middle manager-info">
+                <div class="img">
+                  <el-avatar :size="48" src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png" />
+                </div>
+                <div style="margin-left: 15px;display: inline-block;vertical-align: middle;">
+                  <div class="name">梁海兵</div>
+                  <div class="flag">工艺</div>
+                </div>
+              </div>
+              <div class="vertical-middle ver-line1"></div>
+              <div class="vertical-middle manager-desc">助理工程师。音箱项目产品主管工程师，负责产品技术问题和提效。</div>
+            </div>
+          </div>
+        </div>
+        <div class="left-bottom">
+          <div class="block-border">
+            <div class="title-content">
+              <div class="ver-line"></div>
+              <span class="title" data-v-09e07f67="">批次库存（E4B6）</span>
+              <div class="small-point"></div>
+            </div>
+            <div class="slot-content">
+              <div class="order-count">
+                <div>批次总数:</div>
               </div>
             </div>
-            <div class="manager-item"></div>
-            <div class="manager-item"></div>
           </div>
         </div>
       </div>
+
       <div class="middle-chart">
 
       </div>
@@ -189,9 +229,59 @@
   background: rgba(15, 45, 122, .5);
 }
 
-.bg-image-common {
+.vertical-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.manager-info {
+  width: calc(45% - 10px);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.img {
   width: 48px;
   height: 48px;
-  background-image: url("http://10.51.36.212:8888/je/document/preview?fileKey=wjVB6BA6QFQSKUYhWBj");
+  border: 1px solid #bbbbbb;
+  box-shadow: 0 0 3px 3px #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.name {
+  color: #24e5ff;
+  margin-bottom: 4px;
+}
+
+.flag {
+  font-size: 14px;
+}
+
+.ver-line1 {
+  display: inline-block;
+  height: 120%;
+  width: 1px;
+  margin: 0 10px;
+  background: linear-gradient(0deg, transparent, #1540adff 50%, transparent);
+}
+
+.manager-desc {
+  display: inline-block;
+  width: calc(55% - 15px);
+  color: #fff;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.left-bottom {
+  height: calc(50% - 10px);
+}
+
+.order-count {
+  height: 40px;
+  line-height: 40px;
 }
 </style>
